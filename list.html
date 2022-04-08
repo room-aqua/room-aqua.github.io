@@ -4,72 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet">
     <title>名簿</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
-
         * {
-            margin: 0;
-            padding: 0;
+            margin: 0; padding: 0;
             list-style: none;
             box-sizing: border-box;
             text-decoration: none;
         }
-
         body {
             font-family: 'Noto Sans JP', sans-serif;
         }
-
-        header {
+        main {
+            width: 100%; max-width: 280px;
+            margin: 10px auto 0px;
+            padding: 10px;
+            border-radius: 5px;
+            background: #fff;
+        }
+        ul {
+            border: 1px solid #777;
+            border-radius: 5px;
+            padding: 5px 5px 0;
+        }
+        ul li {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 20px;
+            background-image: linear-gradient(to right, rgba(253,247,216,0) 0%,rgba(253,247,216,0.5) 10%, rgba(211,155,194,0.5) 100%);
+        }
+        ul li a {
+            display: block;
+            color: #333;
+            width: 100%; height: 100%;
+            transition: .3s;
+        }
+        ul li a:hover {
+            color: #4285f4;
+        }
+        .i_link {
+            color: #333;
+            font-size: 20px;
+        }
+        .home {
             text-align: center;
             padding: 10px 0;
         }
-
-        header a {
-            color: #000000;
-            font-size: 25px;
+        .home a {
+            color: #333;
+            font-size: 20px;
             font-weight: bold;
             text-shadow: 1px 1px 1px rgba(0,0,0,.4);
-        }
-
-        main {
-            width: 100%; max-width: 280px;
-            margin: 10px auto 20px;
-            padding: 10px;
-            border-radius: 5px;
-            background: #d3d3d3;
-        }
-
-        main a {
-            display: block;
-            border-radius: 3px;
-            font-size: 20px;
-            color: #000000;
-            transition: .3s;
-            background-image: linear-gradient(to right, rgba(253,247,216,0) 0%,rgba(253,247,216,0.5) 10%, rgba(211,155,194,0.5) 100%);
-        }
-
-        main a:hover {
-            color: mediumspringgreen;
         }
     </style>
 </head>
 <body>
     <main>
-        <a href="http://smalog.jp/thread.php?no=14&id=gb1">三浦</a>
-        <br>
-        <a href="http://smalog.jp/thread.php?no=19&guid=on&id=gb1">システィ</a>
-        <br>      
-        <a href="http://smalog.jp/thread.php?no=229&guid=on&id=gb1">鶴龍ジャポ</a>
-        <br>    
-        <a href="http://smalog.jp/thread.php?no=167&guid=on&id=gb1">風来坊</a>
-        <br>    
-        <a href="http://chat.luvul.net/ChatRoom?room_id=32323">佳子</a>
-        <br> 
-        <a href="http://chat.luvul.net/ChatRoom?room_id=343366">大島 </a>
+        <ul>
+            <li><a href="http://smalog.jp/thread.php?no=14&id=gb1">三浦</a></li>
+            <li><a href="http://smalog.jp/thread.php?no=19&guid=on&id=gb1">システィ</a></li>
+            <li><a href="http://smalog.jp/thread.php?no=229&guid=on&id=gb1">鶴龍ジャポ</a></li>
+            <li><a href="http://smalog.jp/thread.php?no=167&guid=on&id=gb1">風来坊</a></li>
+            <li><a href="http://chat.luvul.net/ChatRoom?room_id=32323">佳子</a></li>
+            <li><a href="http://chat.luvul.net/ChatRoom?room_id=343366">大島 </a></li>
+        </ul> 
     </main>
-    <header>
+
+    <div class="home">
+        <i class="fa-solid fa-arrow-up-right-from-square i_link"></i>
         <a href="index.html">Homeへ戻る</a>
-    </header> 
+    </div>
 </body>
 </html>
