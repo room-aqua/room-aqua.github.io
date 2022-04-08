@@ -1,72 +1,58 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet">
     <title>過去の成績</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
-
         * {
-            margin: 0;
-            padding: 0;
+            margin: 0; padding: 0;
             list-style: none;
             box-sizing: border-box;
             text-decoration: none;
         }
-
         body {
+            position: relative;
             font-family: 'Noto Sans JP', sans-serif;
-            background: #eee;
         }
-
-        header {
-            margin-bottom: 30px;
-            padding: 10px;
-            text-align: center;
-        }
-
+        header {text-align: center;}
         header ul {
             background: #fff;
             width: 100%; max-width: 340px;
             border: 1px solid #aaa;
             border-radius: 3px;
-            margin: auto;
-            padding: 5px 0;
+            margin: auto; padding: 5px 0;
         }
-
         header a {
+            margin-bottom: 10px;
             font-size: 18px;
             opacity: .7;
             transition: .3s;
         }
-        header a:hover {
-            opacity: 1;
-        }
-
+        header a:hover {opacity: 1;}
         header > a {
+            display: inline-block;
             color: #4285f4;
-            font-size: 30px;
+            font-size: 26px;
             font-weight: bold;
             text-shadow: 1px 1px 1px rgba(0,0,0,.4);
         }
-
         main {
             font-family: sans-serif;
             padding: 10px;
             width: 100%; max-width: 360px;
             margin: auto;
         }
-
         fieldset {
             background: #fff;
-            border: 1px solid #777;
+            border: 1px solid #aaa;
             border-radius: 3px;
-            padding: 10px;
-            margin-bottom: 10px;
+            margin-bottom: 10px ;padding: 10px;
         }
-
         legend {
             background: #fff;
             border: 1px solid #aaa;
@@ -76,13 +62,42 @@
             font-size: 20px;
             font-weight: bold;
         }
+        .i_style {
+            position: fixed;
+            bottom: 0; left: 0; right: 0;
+            height: 50px; line-height: 50px;
+            margin: auto;
+            background: #4285f4;
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+            width: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: .3s;
+            opacity: 0;
+        }
+        .i_style.add {opacity: .4;}
+        .i_link {
+            color: mediumspringgreen;
+            font-size: 20px;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <a href="index.html">Homeへ戻る</a><br>
-        <br>
+    <i class="fa-solid fa-arrow-up-long i_style"></i>
+    <header id="header">
+        <i class="fa-solid fa-arrow-up-right-from-square i_link"></i>
+        <a href="index.html">Home</a>
         <ul>
+            <!--
+            ★追加場所
+            夏＝summer 春＝spring 
+            
+            例) 2000年(夏)の場合↓
+            <li><a href="#2000summer">2022(春)</a></li>
+            -->
+
             <li><a href="#2022spring">2022(春)</a></li>
             <li><a href="#2021summer">2021(夏)</a></li>
             <li><a href="#2021spring">2021(春)</a></li>
@@ -107,9 +122,25 @@
     </header>
 
     <main>
+        <!--
+        ★追加場所
+        例) 2000年(春の場合)↓
+
+        <fieldset id="2000spring">
+            <legend>2000(春)</legend>
+            <a href="#header">&lt;トップに戻る&gt;</a><br>
+            <br>
+
+            ■優勝<br>
+            智弁和歌①： AAAB<br>
+            ・・・
+            ・・・
+        </fieldset>
+        -->
+        
         <fieldset id="2022spring">
             <legend>2022(春)</legend>
-            <a href="">&lt;トップに戻る&gt;</a><br>
+            <a href="#header">&lt;トップに戻る&gt;</a><br>
             <br>
             
             ■優勝<br>
@@ -127,7 +158,6 @@
             星稜＿＿②：BBBBBB<br>
             金光大阪②：BBBBBC<br>
             市和歌山②：BBBBCC<br>
-            <br>
             <br>
             ▼<br>
             <br>
@@ -155,25 +185,24 @@
             ■大島<br>
             ☆:17<br>
             <br>
-             ■千<br>
+            ■千<br>
             ☆:16<br>
             <br>
-             ■鶴龍ジャボ<br>
+            ■鶴龍ジャボ<br>
             ☆:16<br>
             <br>
-             ■THMI<br>
+            ■THMI<br>
             ☆:14<br>
             <br>
-             ■佳子さん<br>
+            ■佳子さん<br>
             ☆:11<br>
             <br>
             ▲
-
         </fieldset>
 
         <fieldset id="2021summer">
             <legend>2021(夏)</legend>
-            <a href="">&lt;トップに戻る&gt;</a><br>
+            <a href="#header">&lt;トップに戻る&gt;</a><br>
             <br>
 
             ■優勝<br>
@@ -218,7 +247,7 @@
 
         <fieldset id="2021spring">
             <legend>2021(春)</legend>
-            <a href="">&lt;トップに戻る&gt;</a><br>
+            <a href="#header">&lt;トップに戻る&gt;</a><br>
             <br>
 
             ■優勝<br>
@@ -265,7 +294,7 @@
 
         <fieldset id="2019summer">
             <legend>2019(夏)</legend>
-            <a href="">&lt;トップに戻る&gt;</a><br>
+            <a href="#header">&lt;トップに戻る&gt;</a><br>
             <br>
 
             ■優勝<br>
@@ -319,7 +348,7 @@
 
         <fieldset id="2019spring">
             <legend>2019(春)</legend>
-            <a href="">&lt;トップに戻る&gt;</a><br>
+            <a href="#header">&lt;トップに戻る&gt;</a><br>
             <br>
 
             ■優勝<br>
@@ -372,7 +401,7 @@
 
         <fieldset id="2018summer">
             <legend>2018(夏)</legend>
-            <a href="">&lt;トップに戻る&gt;</a><br>
+            <a href="#header">&lt;トップに戻る&gt;</a><br>
             <br>
 
             ■優勝<br>
@@ -419,7 +448,7 @@
 
         <fieldset id="2018spring">
             <legend>2018(春)</legend>
-            <a href="">&lt;トップに戻る&gt;</a><br>
+            <a href="#header">&lt;トップに戻る&gt;</a><br>
             <br>
 
             ■優勝<br>
@@ -454,7 +483,7 @@
 
         <fieldset id="2017summer">
             <legend>2017(夏)</legend>
-            <a href="">&lt;トップに戻る&gt;</a><br>
+            <a href="#header">&lt;トップに戻る&gt;</a><br>
             <br>
 
             ■優勝<br>
@@ -501,7 +530,7 @@
 
         <fieldset id="2017spring">
             <legend>2017(春)</legend>
-            <a href="">&lt;トップに戻る&gt;</a><br>
+            <a href="#header">&lt;トップに戻る&gt;</a><br>
             <br>
 
             ■優勝<br>
@@ -548,7 +577,7 @@
 
         <fieldset id="2016summer">
             <legend>2016(夏)</legend>
-            <a href="">&lt;トップに戻る&gt;</a><br>
+            <a href="#header">&lt;トップに戻る&gt;</a><br>
             <br>
 
             ■優勝<br>
@@ -595,7 +624,7 @@
 
         <fieldset id="2016spring">
             <legend>2016(春)</legend>
-            <a href="">&lt;トップに戻る&gt;</a><br>
+            <a href="#header">&lt;トップに戻る&gt;</a><br>
             <br>
 
             ■優勝<br>
@@ -639,7 +668,7 @@
 
         <fieldset id="2015summer">
             <legend>2015(夏)</legend>
-            <a href="">&lt;トップに戻る&gt;</a><br>
+            <a href="#header">&lt;トップに戻る&gt;</a><br>
             <br>
 
             ■優勝<br>
@@ -684,7 +713,7 @@
 
         <fieldset id="2015spring">
             <legend>2015(春)</legend>
-            <a href="">&lt;トップに戻る&gt;</a><br>
+            <a href="#header">&lt;トップに戻る&gt;</a><br>
             <br>
 
             ■優勝<br>
@@ -743,7 +772,7 @@
 
         <fieldset id="2014summer">
             <legend>2014(夏)</legend>
-            <a href="">&lt;トップに戻る&gt;</a><br>
+            <a href="#header">&lt;トップに戻る&gt;</a><br>
             <br>
 
             ■優勝<br>
@@ -794,7 +823,7 @@
 
         <fieldset id="2014spring">
             <legend>2014(春)</legend>
-            <a href="">&lt;トップに戻る&gt;</a><br>
+            <a href="#header">&lt;トップに戻る&gt;</a><br>
             <br>
 
             ■優勝<br>
@@ -847,7 +876,7 @@
 
         <fieldset id="2013summer">
             <legend>2013(夏)</legend>
-            <a href="">&lt;トップに戻る&gt;</a><br>
+            <a href="#header">&lt;トップに戻る&gt;</a><br>
             <br>
 
             ■優勝<br>
@@ -904,7 +933,7 @@
 
         <fieldset id="2013spring">
             <legend>2013(春)</legend>
-            <a href="">&lt;トップに戻る&gt;</a><br>
+            <a href="#header">&lt;トップに戻る&gt;</a><br>
             <br>
             
             ■優勝<br>
@@ -952,7 +981,7 @@
 
         <fieldset id="2012summer">
             <legend>2012(夏)</legend>
-            <a href="">&lt;トップに戻る&gt;</a><br>
+            <a href="#header">&lt;トップに戻る&gt;</a><br>
             <br>
 
             ■優勝<br>
@@ -997,7 +1026,7 @@
 
         <fieldset id="2012spring">
             <legend>2012(春)</legend>
-            <a href="">&lt;トップに戻る&gt;</a><br>
+            <a href="#header">&lt;トップに戻る&gt;</a><br>
             <br>
 
             ■優勝<br>
@@ -1048,7 +1077,7 @@
 
         <fieldset id="2011summer">
             <legend>2011(夏)</legend>
-            <a href="">&lt;トップに戻る&gt;</a><br>
+            <a href="#header">&lt;トップに戻る&gt;</a><br>
             <br>
 
             ■優勝<br>
@@ -1097,5 +1126,18 @@
             ▲<br>
         </fieldset>
     </main>
+
+<script>
+    const header = document.querySelector("header");
+    const i = document.querySelector('.i_style');
+    window.addEventListener("scroll", function () {
+        i.classList.toggle("add", window.scrollY > header.offsetHeight);
+    });
+
+    i.addEventListener('click',()=>{
+	    let content_position = header.getBoundingClientRect();
+        window.scrollTo( 0, content_position.top);
+    });
+</script>
 </body>
 </html>
