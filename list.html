@@ -21,7 +21,7 @@
         }
         main {
             width: 100%; max-width: 450px;
-            margin: auto;
+            margin: 0 auto 30px;
         }
         .main_top {position: relative;}
         .main_top img { width: 100%;}
@@ -39,11 +39,13 @@
         }
         .home a, .home .i_link {
             color: #fff;
+            font-weight: bold;
         }
         ul {
             margin-top: 20px;
             text-align: center;
             border-radius: 5px;
+            padding: 2px;
         }
         ul a {
             color: #000;
@@ -56,6 +58,24 @@
             background-image:-moz-linear-gradient(left, #ffffff, #a9a9a9a9);
             background: -webkit-linear-gradient(left, ffffff, #a9a9a9a9);
             background: linear-gradient(to right, #ffffff, #a9a9a9a9);
+        }
+        .btn {
+            text-align: center;
+            width: 110px;
+            border: 1px solid #999;
+            height: 35px; line-height: 35px;
+            margin: 20px auto 0;
+            background: linear-gradient(#eee, #333, #eee);
+            border-radius: 5px;
+            box-shadow: 3px 5px 3px rgba(0,0,0,.4);
+        }
+        .btn a {
+            display: block;
+            width: 100%; height: 100%;
+            font-size: 20px;
+            color: #fff;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px rgba(0,0,0,.9);
         }
     </style>
 </head>
@@ -76,7 +96,10 @@
             <li><a href="http://smalog.jp/thread.php?no=167&guid=on&id=gb1">風来坊</a></li>
             <li><a href="http://chat.luvul.net/ChatRoom?room_id=32323">佳子</a></li>
             <li><a href="http://chat.luvul.net/ChatRoom?room_id=343366">大島 </a></li>
-        </ul> 
+        </ul>
+        <div class="btn">
+            <a href="index.html">野 球 ● 場</a>
+        </div>
     </main>
 </body>
 </html>
