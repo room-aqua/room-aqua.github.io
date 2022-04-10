@@ -9,7 +9,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
         * {
-            margin: 0; padding: 0;
+            margin: 0;
+            padding: 0;
             list-style: none;
             box-sizing: border-box;
             text-decoration: none;
@@ -21,31 +22,15 @@
         }
         main {
             width: 100%; max-width: 450px;
-            margin: 0 auto 30px;
-        }
-        .main_top {position: relative;}
-        .main_top img { width: 100%;}
-        .main_top h1 {
-            position: absolute;
-            left: 0; right: 0; top: 5px;
             margin: auto;
-            text-align: center;
-            color: #fff;
-            font-size: 20px;
         }
-        .home {
-            position: absolute;
-            right: 5px; bottom: 10px;
-        }
-        .home a, .home .i_link {
-            color: #dcdcdc;
-            font-weight: bold;
+        .main_top > img {
+            width: 100%;
+            position: relative;
         }
         ul {
             margin-top: 20px;
             text-align: center;
-            border-radius: 5px;
-            padding: 2px;
         }
         ul a {
             color: #000;
@@ -61,10 +46,10 @@
         }
         .btn {
             text-align: center;
-            width: 110px;
+            width: 120px;
             border: 1px solid #999;
             height: 35px; line-height: 35px;
-            margin: 20px auto 0;
+            margin: 20px auto;
             background: linear-gradient(#808080, #eee, #808080);
             border-radius: 5px;
             box-shadow: 3px 5px 3px rgba(0,0,0,.4);
@@ -74,23 +59,22 @@
             width: 100%; height: 100%;
             font-size: 20px;
             color: #808080;
-            font-weight: bold;
+            font-weight: 600;
             text-shadow: 0px 1px 0px rgba(0,0,0,.9);
         }
     </style>
 </head>
 <body>
     <main>
-        <br>
+     
         <div class="btn">
-        <a href="https://room-aqua.github.io/list.html">名簿</a>
+            <a href="">名簿</a>
         </div>
-        <br>
-        <br>
+      
         <div class="main_top">
             <img src="https://room-aqua.github.io/room-aqua-02/list2.jpg">
         </div>
-        <br>
+     
         <ul>
             <li><a href="http://smalog.jp/thread.php?no=14&id=gb1">三浦</a></li>
             <li><a href="http://smalog.jp/thread.php?no=19&guid=on&id=gb1">システィ</a></li>
@@ -99,11 +83,11 @@
             <li><a href="http://chat.luvul.net/ChatRoom?room_id=32323">佳子</a></li>
             <li><a href="https://chat.luvul.net/ChatRoom?room_id=347153">大島 </a></li>
         </ul>
+
         <div class="btn">
             <a href="index.html">野球●場</a>
         </div>
-        <br>
-        <br>
+    
     </main>
 </body>
 </html>
