@@ -17,37 +17,39 @@
         body {
             position: relative;
             font-family: 'Noto Sans JP', sans-serif;
-            background: #eee;
+            background: #999;
         }
         header {text-align: center;}
         h1 {
-            color: #4285f4;
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+            margin: 20px auto;
+            font-size: 20px;
+            text-align: center;
+            font-weight: 600;
+            width: 150px;
+            border: 1px solid #999;
+            height: 35px; line-height: 35px;
+            color: #777;
+            background-image:-moz-linear-gradient(#808080, #eee, #808080);
+            background: -webkit-linear-gradient(#808080, #eee, #808080);
+            background: linear-gradient(#808080, #eee, #808080);
+            border-radius: 5px;
         }
-        header ul {
-            background: #fff;
+        header > ul {
             width: 100%; max-width: 340px;
-            border: 1px solid #aaa;
             border-radius: 3px;
             margin: auto; padding: 5px 0;
         }
-        header a {
+        header > ul > li {
+            height: 32px; line-height: 32px;
             margin-bottom: 10px;
-            font-size: 18px;
-            opacity: .7;
-            transition: .3s;
+            background-image:-moz-linear-gradient(left, #999, #fff, #999);
+            background: -webkit-linear-gradient(left, #999, #fff, #999);
+            background: linear-gradient(to right, #999, #fff, #999);
         }
-        header a:hover {opacity: 1;}
-        header > a {
-            display: inline-block;
-            color: #333;
-            font-size: 20px;
-            font-weight: bold;
-            text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+        header > ul > li > a {
+            display: block; width: 100%; height: 100%;
         }
+
         main {
             font-family: sans-serif;
             padding: 10px;
@@ -55,8 +57,8 @@
             margin: auto;
         }
         fieldset {
+            border: none;
             background: #fff;
-            border: 1px solid #aaa;
             border-radius: 3px;
             margin-bottom: 10px ;padding: 10px;
         }
@@ -68,6 +70,11 @@
             color: #4285f4;
             font-size: 20px;
             font-weight: bold;
+        }
+        .link {margin-bottom: 20px;}
+        .link a {
+            font-size: 18px;
+            color: #fff;
         }
         .i_style {
             position: fixed;
@@ -86,7 +93,7 @@
         }
         .i_style.add {opacity: .4;}
         .i_link {
-            color: #777;
+            color: #fff;
             font-size: 20px;
         }
     </style>
@@ -95,8 +102,10 @@
     <i class="fa-solid fa-arrow-up-long i_style"></i>
     <header id="header">
         <h1>過去の成績</h1>
-        <i class="fa-solid fa-arrow-up-right-from-square i_link"></i>
-        <a href="index.html">Homeへ戻る</a>
+        <div class="link">
+            <i class="fa-solid fa-arrow-up-right-from-square i_link"></i>
+            <a href="index.html">野球〇場</a>
+        </div>
         <ul>
             <!--
             ★追加場所
