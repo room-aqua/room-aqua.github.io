@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet">
+    <title>past2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+        * {
+            margin: 0; padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-weight: normal;
+        }
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background: #c0c0c0;
+        }
+        main {
+            width: 100%; max-width: 450px;
+            margin: auto;
+        }
+        img {
+            width: 100%;
+        }
+        ul {
+            margin-top: 20px;
+            text-align: center;
+        }
+        ul > li {
+            height: 30px; line-height: 30px;
+            margin-bottom: 15px;
+            background-image:-moz-linear-gradient(left,#ffffff,#c0c0c0);
+            background: -webkit-linear-gradient(left,#ffffff,#c0c0c0);
+            background: linear-gradient(to right,#ffffff,#c0c0c0);
+        }
+        ul > li > a {
+            color: #000;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .btn {
+            display: block;
+            margin: 10px auto;
+            font-size: 20px;
+            text-align: center;
+            font-weight: 600;
+            width: 150px;
+            border: 1px solid #999;
+            height: 35px; line-height: 35px;
+            color: #808080;
+            background-image:-moz-linear-gradient(#808080, #eee, #808080);
+            background: -webkit-linear-gradient(#808080, #eee, #808080);
+            background: linear-gradient(#808080, #eee, #808080);
+            border-radius: 5px;
+            box-shadow: 0px 0px 0px rgba(0,0,0,.0);
+            text-shadow: 0px 0px 0px rgba(0,0,0,.0);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <br>
+        <a class="btn"href="https://room-aqua.github.io/past2.html">過去成績</a>
+        <br>
+        <img src="">
+        <br>
+        <br>
+        <ul>
+            <li><a href="https://room-aqua.github.io/2022.html">2022</a></li>
+            <li><a href="https://room-aqua.github.io/2021.html">2021</a></li>
+            <li><a href="https://room-aqua.github.io/2019.html">2019</a></li>
+            <li><a href="">2018</a></li>
+            <li><a href="">2017</a></li>
+            <li><a href="">2016</a></li>
+	    <li><a href="">2015</a></li>
+	    <li><a href="">2014</a></li>
+	    <li><a href="">2013</a></li>
+	    <li><a href="">2012</a></li>
+	    <li><a href="">2011</a></li>
+        </ul>
+        <br>
+        <a class="btn" href="index.html">野球●場</a>
+        <br>
+        <br>
+    </main>
+</body>
+</html>
