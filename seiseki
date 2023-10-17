@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日程　成績</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background: #eee;
+        }
+        
+        header {
+            padding: 10px;
+            text-align: center;
+        }
+
+        header a {
+            color: #4285f4;
+            font-size: 25px;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+        }
+
+        main {
+            font-family: sans-serif;
+            background: #fff;
+            width: 100%; max-width: 280px;
+            margin: 0 auto 20px;
+            padding: 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+    <br>
+    </header>
+    
+    <main>
+【日程　成績】<br>
+<br>
+<br>
+<br>
+<br>
+        <br>
+        <br>
+        <br>
+        
+    </main>
+</body>
+</html>
