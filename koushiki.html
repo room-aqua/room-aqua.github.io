@@ -7,7 +7,6 @@
     <title>公式ルール</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
-
         * {
             margin: 0;
             padding: 0;
@@ -15,59 +14,49 @@
             box-sizing: border-box;
             text-decoration: none;
         }
-
         body {
             font-family: 'Noto Sans JP', sans-serif;
             background: #eee;
         }
-        
-        header {
-            padding: 10px;
-            text-align: center;
-        }
-
-        header a {
-            color: #4285f4;
-            font-size: 25px;
-            font-weight: bold;
-            text-shadow: 1px 1px 1px rgba(0,0,0,.4);
-        }
-
-        main {
+        .container {
             font-family: sans-serif;
             background: #fff;
-            width: 100%; max-width: 280px;
-            margin: 0 auto 20px;
-            padding: 10px;
+            width: calc(100% - 8px);
+            min-height: 100vh;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        header {
+            padding: 32px;
+            text-align: center;
+        }
+        main {
+            width: 98%;
+            margin: auto;
             border: 1px solid #333;
             border-radius: 5px;
+            padding: 32px 8px 64px;
         }
     </style>
 </head>
 <body>
-
-    <header>
-    <br>
-    </header>
-    
-    <main>
-【公式ルール】<br>
-<br>
-8人でトーナメントです<br>
-参加者が8人揃った時点で開始します<br>
-<br>
-4人打ちで上位2人が決勝戦、下位2人がサゲマン（サゲチン）決定戦です<br>
-1人2試合、計4試合です<br>
-<br>
-対戦日時、部屋立てる人を打ち合わせして下さい<br>
-道路上オンライン対戦、東南戦、一手時間5分、で部屋立てして下さい<br>
-<br>
-遅刻約15分、針落ち、寝落ち、は失格最下位です<br>
-        <br>
-        <br>
-        <br>
-        <br>
-        
-    </main>
+    <div class="container">
+        <nav>
+            <a href="taikai.html">Top</a>
+        </nav>
+        <header>【公式ルール】</header>
+        <main>
+            8人でトーナメントです<br>
+            参加者が8人揃った時点で開始します<br>
+            <br>
+            4人打ちで上位2人が決勝戦、下位2人がサゲマン（サゲチン）決定戦です<br>
+            1人2試合、計4試合です<br>
+            <br>
+            対戦日時、部屋立てる人を打ち合わせして下さい<br>
+            道路上オンライン対戦、東南戦、一手時間5分、で部屋立てして下さい<br>
+            <br>
+            遅刻約15分、針落ち、寝落ち、は失格最下位です<br>   
+        </main>
+    </div>
 </body>
 </html>
