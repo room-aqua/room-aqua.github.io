@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>公式ルール</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background: #EEE8aa;
+        }
+        .container {
+            font-family: sans-serif;
+            background: #EEE8aa;
+            width: calc(100% - 8px);
+            min-height: 100vh;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        header {
+            padding: 32px;
+            text-align: center;
+        }
+        main {
+            width: 98%;
+            margin: auto;
+            border: 1px solid #333;
+            border-radius: 5px;
+            padding: 32px 8px 64px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="taikai.html"></a>
+        </nav>
+        <header>【2024(春)】</header>
+        <main>
+【第1】<br>
+八戸光星② : ABBBBB<br>
+関東第一② : AABBBB<br>
+田辺＿＿③ : BCCCCC<br>
+星稜＿＿① : AAAAAA<br>
+【第2】<br>
+近江＿＿② : BBBBBC<br>
+熊本国府② : ABBBBB<br>
+豊川＿＿② : ABBBBB<br>
+阿南光＿③ : BBBCCC<br>
+【第3】<br>
+敦賀気比② : ABBBBB<br>
+明豊＿＿② : BBBBBB<br>
+学法石川③ : BCCCCC<br>
+健大高崎② : ABBBBB<br>
+【第4】<br>
+創志学園② : BBBBBC<br>
+別海＿＿③ : BBCCCC<br>
+山梨学院② : ABBBBC<br>
+京都外大② : ABBBBB<br>
+【第5】<br>
+耐久＿＿② : BBBBCC<br>
+中央学院③ : BBBCCC<br>
+宇治山商③ : BBCCCC<br>
+東海福岡③ : BBBCCC<br>
+【第6】<br>
+広陵＿＿① : AAAAAB<br>
+高知＿＿② : ABBBBB<br>
+京都国際② : BBBBBB<br>
+青森山田② : AAABBB<br>
+【第7】<br>
+神村学園② : BBBBBB<br>
+作新学院① : AAAAAA<br>
+大阪桐蔭① : AAAAAA<br>
+北海＿＿② : ABBBBB<br>
+【第8】<br>
+愛工名電② : ABBBBB<br>
+報徳学園② : ABBBBB<br>
+航空石川② : BBBBBC<br>
+常総学院② : BBBBBB<br>
+ </main> </div></body></html>
